@@ -30,7 +30,7 @@
 
     <p class="description">I'm a Computer Science Engineering student interested in software development, web technologies and problem solving. I'm currently building projects while strengthening my skills in DSA and modern development.</p>
 
-    <button>EXPLORE MY WORK -></button>
+    <button id="explore-work-btn">EXPLORE MY WORK -></button>
 
     </div>
      <div class="hero-image">
@@ -189,7 +189,7 @@
     </div>
 
 </section>
-<section class="projects-section">
+<section class="projects-section" id="projects-section">
 
     <div class="projects-heading">
         <p class="section-label">PROJECTS</p>
@@ -596,7 +596,9 @@
 
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/mrpbyakg" method="POST">
+
+            <input type="hidden" name="_subject" value="New message from portfolio site">
 
             <div class="form-group">
 
@@ -607,6 +609,7 @@
                 <input
                     type="text"
                     id="name"
+                    name="name"
                     placeholder="Enter your name"
                     required
                 >
@@ -623,6 +626,7 @@
                 <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="Enter your email"
                     required
                 >
@@ -637,6 +641,7 @@
 
                 <textarea
                     id="message"
+                    name="message"
                     rows="6"
                     placeholder="Write your message..."
                     required
